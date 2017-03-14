@@ -41,7 +41,6 @@ public class CountrySearchControllerTests {
 		System.out.println(html);
 	}
 	
-	
 	@Test
 	public void test03_getItem() {
 		String html = rest.getForObject("/country/item/KOR", String.class);
@@ -52,10 +51,5 @@ public class CountrySearchControllerTests {
 	public void test03_getItem_NotFountRuntimeException() {
 		String html = rest.getForObject("/country/item/xxx", String.class);
 		System.out.println(html);
-	}
-	
-	
-	
-	
-	
+	}	
 }

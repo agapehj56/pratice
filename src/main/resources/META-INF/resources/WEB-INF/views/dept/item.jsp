@@ -10,8 +10,8 @@
 <title>list.jsp</title>
 </head>
 <body>
-<c:forEach var="country" items="${list}">
-	${country.code} ${country.name} ${country.population}<br>
+<c:forEach var="dept" items="${list}">
+	${dept.deptno} ${dept.dname} ${dept.loc}<br>
 </c:forEach>
 </body>
 </html>
