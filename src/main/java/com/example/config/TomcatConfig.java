@@ -29,7 +29,5 @@ public class TomcatConfig extends ServerProperties {
 				context.addWelcomeFile("index.jsp");
 			}
 		});
-		
 	}
-
 }

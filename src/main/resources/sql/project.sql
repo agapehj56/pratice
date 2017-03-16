@@ -173,9 +173,15 @@ select *
 offset 1 * 10 row
  fetch next 2*10 rows only;
  
+
+ select * from country where code='XYZ';
+ delete from country where code='XYZ';
+
+
+
+
  
- 
-  
+
   	
 	
 	

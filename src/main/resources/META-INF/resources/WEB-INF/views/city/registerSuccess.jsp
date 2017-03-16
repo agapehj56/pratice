@@ -7,15 +7,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>item.jsp</title>
+<title>registerSuccess.jsp</title>
+
+<!-- Code Assist -->
+<c:if test="false">
+	<link rel="stylesheet" href="../code_assist/animate.css">
+	<link rel="stylesheet" href="../code_assist/bootstrap.css">
+</c:if>
+
 </head>
 <body>
-${error}<br>
-${dept.deptno} ${dept.dname} ${dept.loc} <br>
-<hr>
-<c:forEach var="emp" items="${dept.emps}">
-	${emp.empno} ${emp.ename} ${emp.job}<br>
-</c:forEach>
-
+<h1>City 등록 성공입니다.</h1>
 </body>
 </html>

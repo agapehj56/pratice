@@ -35,6 +35,21 @@ public class DeptSearchControllerTests {
 		System.out.println(html);
 	}
 	
+	@Test
+	public void test02_getPage(){
+		String html = rest.getForObject("/dept/page/1", String.class);
+		System.out.println(html);
+	}
 	
+	@Test
+	public void test03_getItem(){
+		String html = rest.getForObject("/dept/item/10", String.class);
+		System.out.println(html);
+	}
 	
+	@Test
+	public void test03_getItem_NotFoundRuntimeException(){
+		String html = rest.getForObject("/dept/item/46", String.class);
+		System.out.println(html);
+	}
 }

@@ -41,6 +41,5 @@ ${paging}
 		$('.btn').toggleClass('btn-danger');
 	}
 </script>
-
 </body>
 </html>

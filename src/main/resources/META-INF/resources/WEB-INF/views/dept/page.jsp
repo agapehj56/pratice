@@ -7,11 +7,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>list.jsp</title>
+<title>page.jsp</title>
+
+<!-- code_assist -->
+<c:if test="false">
+	<link rel="stylesheet" href="../code_assist/animate.css">
+	<link rel="stylesheet" href="../code_assist/bootstrap.css">
+</c:if>
+
 </head>
 <body>
-<c:forEach var="dept" items="${list}">
-	${dept.deptno} ${dept.dname} ${dept.loc}<br>
+<c:set var="dept"		value="${page.dept}"/>
+<c:set var="paging"		value="${page.paging}"/>
+<h1>Dept Page List pageNo = ${paging.pageNo}</h1>
+
+<c:forEach var="d" items="${dept}" varStatus="status">
+	<b>${status.index}</b>
+	${d.deptno} <a href="/dept/item/${d.deptno}">${d.dname}</a>${d.loc}<br>
 </c:forEach>
+
+<hr>
+
+<a href="/dept/page/${paging.firstPage - 1}">Prev</a>
+<c:forEach var="i" begin="${paging.firstPage}" end="${paging.lastPage}">
+	<a href="/dept/page/${i}">${i}</a>
+</c:forEach>
+<a href="/dept/page/${paging.lastPage + 1}">Next</a>
 </body>
 </html>

@@ -8,6 +8,13 @@
 <head>
 <meta charset="UTF-8">
 <title>list.jsp</title>
+
+<!-- Code Assist -->
+<c:if test="false">
+	<link rel="stylesheet" href="../code_assist/animate.css">
+	<link rel="stylesheet" href="../code_assist/bootstrap.css">
+</c:if>
+
 </head>
 <body>
 <c:forEach var="country" items="${list}">

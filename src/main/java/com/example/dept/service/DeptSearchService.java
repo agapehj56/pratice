@@ -72,8 +72,8 @@ public class DeptSearchService {
 		else
 			dept = deptmapper.selectByDeptno(deptno);
 		
-		if(dept == null)
-			throw new NotFoundRuntimeException("해당 부서가 없습니다.");
+//		if(dept == null)
+//			throw new NotFoundRuntimeException("해당 부서가 없습니다.");
 		return dept;
 	}
 }
