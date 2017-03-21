@@ -3,7 +3,6 @@ package com.example.domain;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -42,7 +41,6 @@ public class Emp {
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-
 		return str;
 	}
 

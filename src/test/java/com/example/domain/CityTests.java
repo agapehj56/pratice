@@ -9,7 +9,5 @@ public class CityTests {
 		City c = new City();
 		
 		System.out.println(c);
-	}
-
-	
+	}	
 }

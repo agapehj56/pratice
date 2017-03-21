@@ -12,5 +12,4 @@ public class DeptTests {
 		
 		System.out.println(d);
 	}
-
 }
