@@ -1,6 +1,7 @@
 package com.example.domain;
 
 import java.sql.Date;
+import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,6 +13,16 @@ public class Bookstate {
 	private Integer bookCode;
 	private String checkState;
 	private Date rentReserveDate;
+	
+	private List<Book> books;	
+
+	public List<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(List<Book> books) {
+		this.books = books;
+	}
 
 	public Bookstate() {
 

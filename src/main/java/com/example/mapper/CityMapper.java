@@ -40,6 +40,7 @@ public interface CityMapper {
 	 * Insert
 	 */
 	int insert(City city);
+	
 	/*
 	 * Update
 	 */
@@ -49,7 +50,5 @@ public interface CityMapper {
 	 * Delete
 	 */
 	@Delete("delete from city where id=#{id}")
-	int deleteById(int id);
-	
-	
+	int deleteById(int id);	
 }
