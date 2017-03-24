@@ -19,7 +19,7 @@ public class BookstateMapperTests {
 	BookstateMapper bookstatemapper;
 	
 	@Test
-	public void test00_cinfirmMapper(){
+	public void test00_confirmMapper(){
 		System.out.println("bookstatemapper = " + bookstatemapper);
 	}
 	
